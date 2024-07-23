@@ -71,6 +71,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "ecommerce",
-  "nxCloudAccessToken": "YjcyZWYwN2ItNTMyOC00ODRjLWJlZGUtNDUwZWY0NDNmZTVlfHJlYWQtd3JpdGU="
+  "defaultProject": "ecommerce"
 }
