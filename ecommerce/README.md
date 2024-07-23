@@ -14,7 +14,9 @@ cd angular-pro-tech-experts
 npm install
 ```
 
-## Servir o projeto localmente
+## Comandos gerais do projeto
+
+### Servir o projeto localmente
 
 ```
 npm start
@@ -28,7 +30,7 @@ npx nx serve
 
 O projeto será servido por padrão em http://localhost:4200/.
 
-## Executar tarefas independentes
+### Executar tarefas independentes
 
 ```
 npx nx <NOME_DA_TAREFA> <NOME_DO_MODULO>
@@ -43,13 +45,13 @@ npx nx lint modules-layout
 
 OBS.: O nome do projeto está definido no arquivo `nx.json` na propriedade `defaultProject`. Ou seja, ao executar o comando `npx nx test ecommerce`, está executando o teste em todos os módulos do projeto.
 
-## Visualizar Dependency Graph
+### Visualizar Dependency Graph
 
 ```
 npx nx graph
 ```
 
-## Executar tarefas somente do que foi afetado
+### Executar tarefas somente do que foi afetado
 
 ```
 npx nx affected:<NOME_DA_TAREFA>
@@ -63,3 +65,13 @@ npx nx affected:graph
 ```
 
 O Nx "mapeia" os módulos que foram afetados por alguma modificação a partir do grafo de dependências.
+
+## Tailwind
+
+O projeto foi inicialmente criado usando o `scss`, mas o [`tailwind`](https://tailwindcss.com/) foi instalado posteriormente com o comando:
+
+```
+npx nx g @nx/angular:setup-tailwind ecommerce
+```
+
+Essa instalação foi feita para o projeto como um todo, de forma global (poderia ter sido feito já na criação do projeto - https://nx.dev/recipes/angular/using-tailwind-css-with-angular-projects), mas ela também pode ser feita para um módulo específico de forma isolada.
