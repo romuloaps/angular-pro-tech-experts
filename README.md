@@ -75,3 +75,16 @@ npx nx g @nx/angular:setup-tailwind ecommerce
 ```
 
 Essa instalação foi feita para o projeto como um todo, de forma global (poderia ter sido feito já na criação do projeto - https://nx.dev/recipes/angular/using-tailwind-css-with-angular-projects), mas ela também pode ser feita para um módulo específico de forma isolada.
+
+## Conventional commits
+
+Especificação para padronizar o texto dos commits de forma a facilitar a leitura:
+https://www.conventionalcommits.org
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
