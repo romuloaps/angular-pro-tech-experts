@@ -1,18 +1,20 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RouterModule } from "@angular/router";
+import { AppComponent } from "./app.component";
 
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent, NxWelcomeComponent, RouterModule.forRoot([])],
-    }).compileComponents();
-  });
+describe("AppComponent", () => {
+    let fixture: ComponentFixture<AppComponent>;
 
-  it(`should have as title 'ecommerce'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('ecommerce');
-  });
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [AppComponent, RouterModule.forRoot([])],
+        }).compileComponents();
+
+        fixture = TestBed.createComponent(AppComponent);
+    });
+
+    it("deve conter a tag header", () => {
+        const header: HTMLElement = fixture.nativeElement.querySelector("header");
+        expect(header).toBeTruthy();
+    });
 });

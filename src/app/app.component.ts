@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { LayoutModule } from '@ecommerce/layout';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { LayoutModule } from "@ecommerce/layout";
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, LayoutModule],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    standalone: true,
+    imports: [RouterModule, LayoutModule],
+    selector: "app-root",
+    templateUrl: "./app.component.html",
+    styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'ecommerce';
+    title = "ecommerce";
 }
