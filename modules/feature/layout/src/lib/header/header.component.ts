@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-header',
+  selector: 'layout-header',
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {}
