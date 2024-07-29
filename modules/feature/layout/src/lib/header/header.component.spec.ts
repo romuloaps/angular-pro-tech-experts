@@ -20,9 +20,14 @@ describe("HeaderComponent", () => {
     });
 
     it("deve ter o título", () => {
+        const titulo = "Título de teste";
+        component.title = titulo;
+        fixture.detectChanges();
+
         const header: HTMLElement = fixture.nativeElement.querySelector("header");
+
         expect(header.childElementCount).toBe(1);
         expect(header.firstChild?.nodeName.toLocaleLowerCase()).toBe("h1");
-        expect(header.firstChild?.textContent).toBe("Meu E-commerce");
+        expect(header.firstChild?.textContent).toBe(titulo);
     });
 });

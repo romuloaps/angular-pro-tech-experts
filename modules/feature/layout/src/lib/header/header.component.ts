@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'layout-header',
-  templateUrl: './header.component.html',
+    selector: "layout-header",
+    templateUrl: "./header.component.html",
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+    @Input({ required: true }) title = "";
+}
