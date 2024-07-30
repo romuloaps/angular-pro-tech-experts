@@ -88,3 +88,14 @@ https://www.conventionalcommits.org
 
 [optional footer(s)]
 ```
+
+## Husky e LintStaged
+
+Husky é usado para configurar scripts ligados às ações do git. Por exemplo, excutar testes antes de comitar ou antes de fazer push.
+
+LintStaged é usado para executar tasks do framework/node, seja de lint ou não. No projeto está sendo usado em conjunto com o husky para executar tasks de teste e lint no `pre-commit`
+
+```
+npx husky-init && npm install
+npm install -D lint-staged
+```
