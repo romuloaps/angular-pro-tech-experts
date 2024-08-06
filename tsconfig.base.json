@@ -15,7 +15,8 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
-            "@ecommerce/layout": ["modules/feature/layout/src/index.ts"]
+            "@ecommerce/layout": ["modules/feature/layout/src/index.ts"],
+            "@ecommerce/produto-busca": ["modules/feature/produto/busca/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]
