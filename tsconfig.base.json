@@ -16,7 +16,8 @@
         "baseUrl": ".",
         "paths": {
             "@ecommerce/layout": ["modules/feature/layout/src/index.ts"],
-            "@ecommerce/produto-busca": ["modules/feature/produto/busca/src/index.ts"]
+            "@ecommerce/produto-busca": ["modules/feature/produto/busca/src/index.ts"],
+            "@ecommerce/produto-data-access": ["modules/data-access/produto/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

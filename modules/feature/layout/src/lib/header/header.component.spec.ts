@@ -28,6 +28,6 @@ describe("HeaderComponent", () => {
 
         expect(header.childElementCount).toBe(1);
         expect(header.firstChild?.nodeName.toLocaleLowerCase()).toBe("h1");
-        expect(header.firstChild?.textContent).toBe(titulo);
+        expect(header.firstChild?.textContent?.trim()).toBe(titulo);
     });
 });

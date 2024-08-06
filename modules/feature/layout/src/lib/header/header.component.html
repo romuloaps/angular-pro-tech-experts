@@ -1,3 +1,7 @@
-<header class="m-4 p-4 text-lg text-blue-900 border-b">
-    <h1>{{ title }}</h1>
+<header class="m-4 p-4 text-lg text-blue-900 border-b flex items-center justify-between">
+    <h1 aria-label="Título do site">
+        {{ title }}
+    </h1>
+    <ng-content></ng-content>
+    <ng-content select="[right]"></ng-content>
 </header>
